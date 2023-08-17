@@ -13,5 +13,9 @@
     <string name="red_button_text">Red</string>
     <string name="yellow_button_text">Yellow</string>
     <string name="green_button_text">Green</string>
+    <string name="tap_in_this_box">Tap on this box</string>
+    <string name="pink_button">Pink</string>
+    <string name="button_blue">Blue</string>
+    <string name="brown_button_text">Brown</string>
 
 </resources>

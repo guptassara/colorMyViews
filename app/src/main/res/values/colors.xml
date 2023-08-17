@@ -5,4 +5,10 @@
     <color name="my_green_colour">#008450</color>
     <color name="my_red_colour">#B81D13</color>
     <color name="my_yellow_colour">#EFB700</color>
+    <color name="my_orange_colour">#FFA500</color>
+    <color name="my_blue_colour"> #0000ff</color>
+    <color name="my_pink_colour"> #FFB6C1</color>
+    <color name="my_brown_colour"> #964B00</color>
+
+
 </resources>

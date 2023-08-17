@@ -8,22 +8,10 @@
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
-    <Button
-        android:id="@+id/red_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="58dp"
-        android:text="@string/red_button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/yellow_button"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/box_one_text"
         style="@style/styles"
-        android:text="@string/box_one"
+        android:text="@string/tap_in_this_box"
         android:textColor="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +39,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/ubuntu"
-        android:text="@string/box_two"
+        android:text="@string/tap_in_this_box"
         android:textColor="#757575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
@@ -64,7 +52,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/box_three"
+        android:text="@string/tap_in_this_box"
         android:textColor="#757575"
         app:layout_constraintBottom_toTopOf="@+id/box_four_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +68,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/box_five"
+        android:text="@string/tap_in_this_box"
         android:textColor="#757575"
         app:layout_constraintBottom_toBottomOf="@+id/box_two_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +84,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/box_four"
+        android:text="@string/tap_in_this_box"
         android:textColor="#757575"
         app:layout_constraintBottom_toTopOf="@+id/box_five_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +102,7 @@
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/info_text"
         app:layout_constraintEnd_toStartOf="@+id/info_text"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -125,7 +114,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/box_two_text"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.586" />
 
     <Button
         android:id="@+id/yellow_button"
@@ -135,9 +124,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/green_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/red_button"
+        app:layout_constraintStart_toEndOf="@+id/brown_button"
         app:layout_constraintTop_toBottomOf="@+id/label"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.381" />
 
     <Button
         android:id="@+id/green_button"
@@ -146,10 +135,99 @@
         android:layout_marginStart="52dp"
         android:layout_marginEnd="16dp"
         android:text="@string/green_button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/yellow_button" />
+
+    <Button
+        android:id="@+id/brown_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="58dp"
+        android:text="@string/brown_button_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+        app:layout_constraintEnd_toStartOf="@+id/yellow_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/box_six_text"
+        style="@style/styles"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/tap_in_this_box"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_two_text" />
+
+    <TextView
+        android:id="@+id/box_seven_text"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tap_in_this_box"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box_six_text"
+        app:layout_constraintTop_toBottomOf="@+id/box_five_text" />
+
+    <TextView
+        android:id="@+id/box_eight_text"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tap_in_this_box"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/box_nine_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box_six_text"
+        app:layout_constraintTop_toBottomOf="@+id/box_seven_text" />
+
+    <TextView
+        android:id="@+id/box_nine_text"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tap_in_this_box"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box_eight_text"
+        app:layout_constraintTop_toBottomOf="@+id/box_seven_text" />
+
+    <Button
+        android:id="@+id/blue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_blue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pink_button"
+        app:layout_constraintEnd_toStartOf="@+id/pink_button"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pink_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/pink_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/blue_button" />
+
     <!--        tools:ignore="MissingConstraints"-->
     tools:layout_editor_absoluteY="134dp" />
 
